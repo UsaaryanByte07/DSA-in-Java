@@ -1,4 +1,4 @@
-public class Best_Time_To_Buy_And_Sell_A_Stock_121 {
+public class Best_Time_To_Buy_And_Sell_A_Stock_121_M1 {
     public static void main(String[] args) {
         
     }
@@ -17,6 +17,8 @@ public class Best_Time_To_Buy_And_Sell_A_Stock_121 {
 }
 
 /*
+Greedy Approach:
+
 Learning:
 How this Solution uses greedy Approach:
 -> A Greedy algorithm is defined by making the "locally optimal choice" at each step. It looks at the current moment, takes whatever looks best right now, and never looks back to reconsider past decisions.
