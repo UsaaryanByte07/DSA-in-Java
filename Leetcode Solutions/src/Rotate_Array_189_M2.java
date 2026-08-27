@@ -1,0 +1,33 @@
+public class Rotate_Array_189_M2 {
+    public static void main(String[] args) {
+        
+    }
+
+    public void rotate(int[] nums, int k) {
+        int n = nums.length;
+
+        //To Handle Cases where k is Larger then Length of Array
+        k = k%n;
+        reverse(nums, 0, n - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, n - 1);
+    }
+
+    public static void reverse(int[] nums, int low, int high) {
+        while (low < high) {
+            int temp = nums[low];
+            nums[low] = nums[high];
+            nums[high] = temp;
+
+            low++;
+            high--;
+        }
+    }
+}
+
+/*
+# 3 Reversal Method:
+Summary:
+Time Complexity = O(n)
+Space Complexity = O(1)
+*/
